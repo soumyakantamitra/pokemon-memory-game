@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oxanium, serif;
+  background: url("./assets/pokemon-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  font-size: large;
+}
+
+section .score {
+  justify-items: end;
+}
+
+section .result {
+  grid-column: 1 / 3;
+  justify-self: center;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+}
+
+main .card {
+  cursor: pointer;
+  font-family: "Press Start 2P", serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 280px;
+  height: 350px;
+  background: lightcyan;
+}
+
+.card .image {
+  padding: 10px;
+  width: 100%;
+  height: 80%;
+}
+
+.card .name {
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  main .card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .card .name {
+    padding-top: 10px;
+  }
+
+}
+
+@media (max-width: 431px) {
+  main .card {
+    width: 100%;
+    height: 280px;
+  }
+
+  .card .name {
+    padding-top: 10px;
+  }
+
+}
